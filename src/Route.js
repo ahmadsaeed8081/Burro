@@ -96,7 +96,7 @@ useEffect(()=>{
        BURROBalance = await BURRO_contract.methods.balanceOf(address).call();    
   
        totalReward = await staking_contract.methods.get_TotalReward().call({ from: address });   
-       totalEarning = await staking_contract.methods.get_totalEarning(address).call(); 
+       totalEarning = await staking_contract.methods.get_totalEarning().call(); 
        user = await staking_contract.methods.user(address).call();      
        allInvestments = await staking_contract.methods.getAll_investments().call({from: address});
 

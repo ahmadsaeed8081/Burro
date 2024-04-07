@@ -405,7 +405,7 @@ function buy_token()
             </div>
             <p className='text-center my-4 sm:text-[14px]'></p>
             <button className='bg-custom-green p-2 w-full rounded-sm text-black font-bold' onClick={buy_token}>Buy Now</button>
-            <p className='text-center mt-4 sm:text-[14px]'>Launch On <a href="#" style={{ color:"#7DF9FF"}} >UniSwap</a> And <a style={{ color:"#7DF9FF"}}href="#">QuickSwap</a> Soon</p>
+            <p className='text-center mt-4 sm:text-[14px]'>Listing On <a href="#" style={{ color:"#7DF9FF"}} >P2B Exchange</a>, <a href="#" style={{ color:"#7DF9FF"}} >Uniswap</a>, <a href="#" style={{ color:"#7DF9FF"}} >Pancakeswap</a>,<a style={{ color:"#7DF9FF"}}href="#"> Orca</a>, <a href="#" style={{ color:"#7DF9FF"}} >Raydium</a> and <a style={{ color:"#7DF9FF"}}href="#">Jupiter</a>.</p>
 
           </div>
 
@@ -467,7 +467,7 @@ function buy_token()
           <p className='font-semibold text-sm my-3'>Lets's join us for this fun wildride of this burro adventure and enjoy this beautiful journey along with us.</p>
           <div className='flex gap-2 mt-7'>
             {/* <button className='bg-custom-black rounded px-7 p-2 text-white text-nowrap sm:px-5'>Get Started</button> */}
-            <button className='border bg-custom-black rounded px-10 p-2 text-white font-semibold text-nowrap sm:px-5' onClick={openPDF}>White Paper</button>
+            <button className='border bg-custom-black rounded px-10 p-2 text-white font-semibold text-nowrap sm:px-5' onClick={openPDF}>Whitepaper</button>
           </div>
           </div>          
         </div>
