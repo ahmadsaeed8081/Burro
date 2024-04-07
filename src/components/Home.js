@@ -73,7 +73,7 @@ const { address, isConnecting ,isConnected,isDisconnected} = useAccount()
  targetDate.setDate(targetDate.getDate() + 5); //5 days set
 
  const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
- const [prog_percentage, set_prog_percentage] = useState(6.35);
+ const [prog_percentage, set_prog_percentage] = useState(0);
 
  function getTimeRemaining() {
    const now = new Date();
