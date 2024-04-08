@@ -358,16 +358,42 @@ function buy_token()
   </ul>
             </div>
 
+            {/* <div className="text-center my-4 text-[14px]"> */}
+              {/* <p>Stage {props.curr_stage?(Number(props.curr_stage)):""}</p> */}
+              {/* <p>Your Stakeable $GBTC = 0</p> */}
+            {/* </div> */}
 
+            <p className='mt-5 mb-2 text-[16px]' style={{ color:"#7DF9FF" }}>Stage # {props.curr_stage}</p>
 
             <p className='text-center mt-5 mb-2 text-[16px]'>{props.curr_presale.total_sold ? Number(props.curr_presale.total_sold)/10**18:0} / {props.curr_presale.supply?Number(props.curr_presale.supply)/10**18:0}</p>
             <div class="w-full backdrop-filter backdrop-blur-md bg-opacity-[13%] bg-white rounded-md h-4">
+              
               <div class="bg-custom-green h-4 rounded-md" style={{width: `${Number(prog_percentage)}%` }}></div>
             </div>
-            <div className="text-center my-4 text-[16px]">
-              <p>Your Purchased BURRO = {props.BURROBalance?(Number(props.BURROBalance)/10**18).toFixed(2):""}</p>
+
+            
+            <div className='relative z-10 flex gap-40 mb-2'>
+
+            <div className="text-center my-4 text-[14px]">
+              <p>1 BURRO = {props.curr_presale.price?(Number(props.curr_presale.price)/10**18):""}</p>
               {/* <p>Your Stakeable $GBTC = 0</p> */}
             </div>
+            {Number(props.curr_stage)  < 9? (
+
+            <div className="text-right my-4 text-[14px]" >
+            <p >Next = {props.NextStagePrice?(Number(props.NextStagePrice)/10**18):""}</p>
+          </div>
+
+            ):
+            
+            (null) }
+
+            </div>
+
+
+            {/* <div className="text-center my-4 text-[16px]">
+              <p>Your Purchased BURRO = {props.BURROBalance?(Number(props.BURROBalance)/10**18).toFixed(2):""}</p>
+            </div> */}
             <div className='relative z-10 flex gap-4 mb-2'>
               <div onClick={onClickMatik} className={matik? 'border-2 border-custom-green w-1/2 backdrop-filter backdrop-blur-md bg-opacity-[13%] bg-black rounded-md cursor-pointer':' border-none w-1/2 backdrop-filter backdrop-blur-md bg-opacity-[13%] bg-black rounded-md cursor-pointer'}>
                 <img className='h-10 w-10 mr-2 inline-block' src={coinMatik}></img>
@@ -463,8 +489,8 @@ function buy_token()
           <div className='p-10 md:p-4 md:order-1'>
             <div className='flex gap-2 font-zendots md:justify-center'><div className='md:hidden border-t-2 border-custom-black h-1 w-16 mt-3'></div>About Us</div>
             <p className='text-2xl font-zendots my-3'>WELCOME TO THE WORLD OF BURRO</p>
-          <p className='lowercase text-sm'>We are an ultimate nft token. Burro Token dominates all the others as it has much more to offer then your regular utility token as we will share 80% profit of revenue generated from nft sales and merchandise. We offer Buyback and burn program as well.</p>
-          <p className='font-semibold text-sm my-3'>Lets's join us for this fun wildride of this burro adventure and enjoy this beautiful journey along with us.</p>
+          <p className=' text-sm'>We are an ultimate NFT token. Burro Token dominates all the others as it has much more to offer than your regular utility token as we will share 80% profit of revenue generated from NFT sales and merchandise. We offer Buyback and Burn program as well.</p>
+          <p className='font-semibold text-sm my-3'>Let's join us for this fun Wildride of this Burro adventure and enjoy this beautiful journey along with us.</p>
           <div className='flex gap-2 mt-7'>
             {/* <button className='bg-custom-black rounded px-7 p-2 text-white text-nowrap sm:px-5'>Get Started</button> */}
             <button className='border bg-custom-black rounded px-10 p-2 text-white font-semibold text-nowrap sm:px-5' onClick={openPDF}>Whitepaper</button>

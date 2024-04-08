@@ -1,4 +1,4 @@
-export const presale_address="0x1586560c5712672a5E75D737Dee28b7424666A84";
+export const presale_address="0xD51AcBeA8B85217E81dA1892f27702DAa38c35eF";
 export const USDT_Address="0xc16b32F200eA3c91E06c016e3F19738459F74146";
 export const BURRO_Address="0xd562bEA1e3ca6236e3c2626b5E1499f44E9002b7";
 export const staking_Address="0x25c32A3459d57c8f340AD2C6186Fa349D96ab1d2";

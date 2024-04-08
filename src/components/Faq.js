@@ -107,42 +107,62 @@ const Faq = () => {
         <div className='flex md:flex-wrap m-auto'>
           <div className='w-1/2 md:w-full mr-4 md:mr-0'>
             <div className='bg-[#161616] p-4 rounded-lg text-white my-3 cursor-pointer pr-5' onClick={onClickfaq1}>
-              <p className='font-zendots sm:text-sm relative'>01  What is Burro <img className="absolute right-0 top-0" src={faqicon}></img></p>
+              <p className='font-zendots sm:text-sm relative'>01  What is BURRO ?<img className="absolute right-0 top-0" src={faqicon}></img></p>
               {faq1 ? <Textfaq1 /> : null}
             </div>
-            <div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq2}>
+                      <div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq5}>
+            <p className='font-zendots sm:text-sm relative'>02  Where can I buy BURRO?<img className="absolute right-0 top-0" src={faqicon}></img></p>
+            {faq5 ? <Textfaq5 /> : null}
+
+          </div>
+            {/* <div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq2}>
               <p className='font-zendots sm:text-sm relative'>02  How do I claim my BURRO tokens?<img className="absolute right-0 top-0" src={faqicon}></img></p>
               {faq2 ? <Textfaq2 /> : null}
 
+          </div> */}
+
+<div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq6}>
+            <p className='font-zendots sm:text-sm relative'>03  What is benefit of buying BURRO token?<img className="absolute right-0 top-0" src={faqicon}></img></p>
+            {faq6 ? <Textfaq6 /> : null}
+
           </div>
-          <div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq3}>
+          {/* <div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq3}>
               <p className='font-zendots sm:text-sm relative'>03  Do you have customer service?<img className="absolute right-0 top-0" src={faqicon}></img></p>
               {faq3 ? <Textfaq3 /> : null}
 
-          </div><div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq4}>
+          </div> */}
+          
+          <div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq4}>
               <p className='font-zendots sm:text-sm relative'>04  Is there staking on BURRO?<img className="absolute right-0 top-0" src={faqicon}></img></p>
               {faq4 ? <Textfaq4 /> : null}
 
           </div>
           </div>
           <div className='w-1/2 ml-4 md:w-full md:ml-0'>
-          <div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq5}>
+            
+          {/* <div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq5}>
             <p className='font-zendots sm:text-sm relative'>05  Where can I buy BURRO?<img className="absolute right-0 top-0" src={faqicon}></img></p>
             {faq5 ? <Textfaq5 /> : null}
 
-          </div>
-          <div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq6}>
+          </div> */}
+          {/* <div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq6}>
             <p className='font-zendots sm:text-sm relative'>06  What is benefit of buying burro token?<img className="absolute right-0 top-0" src={faqicon}></img></p>
             {faq6 ? <Textfaq6 /> : null}
 
+          </div> */}
+
+<div className='bg-[#161616] p-4 rounded-lg text-white my-3  cursor-pointer pr-5' onClick={onClickfaq3}>
+              <p className='font-zendots sm:text-sm relative'>05  Do you have customer service?<img className="absolute right-0 top-0" src={faqicon}></img></p>
+              {faq3 ? <Textfaq3 /> : null}
+
           </div>
           <div className='bg-[#161616] p-4 rounded-lg text-white my-3 cursor-pointer pr-5' onClick={onClickfaq7}>
-              <p className='font-zendots sm:text-sm relative'>07  How do I speak to the marketing team?<img className="absolute right-0 top-0" src={faqicon}></img></p>
+              <p className='font-zendots sm:text-sm relative'>06  How do I speak to the marketing team?<img className="absolute right-0 top-0" src={faqicon}></img></p>
               {faq7 ? <Textfaq7 /> : null}
 
           </div>
           <div className='bg-[#161616] p-4 rounded-lg text-white my-3 cursor-pointer pr-5' onClick={onClickfaq8}>
-              <p className='font-zendots sm:text-sm relative'>08  Is the BURRO project audited?<img className="absolute right-0 top-0" src={faqicon}></img></p>
+              <p className='font-zendots sm:text-sm relative'>07  Is the BURRO project audited?<img className="absolute right-0 top-0" src={faqicon}></img></p>
               {faq8 ? <Textfaq8 /> : null}
 
           </div>
@@ -158,7 +178,7 @@ function Textfaq1(){
     return(
         <>
 <p className=' text-xs sm:text-[10px] pt-2'>
-The BURRO is a new crypto project that leverages AI technology, powerful viral marketing AND GREAT ROI UTILITY token. BURRO doesn’t mess around and has a mission to hit a $1B market cap, launching new products like the BURRO NFT WORLD, BURRO MERCHANDISE STORE AND BURRO TOKEN SWAP ON OUR PLATFORM.
+The BURRO is a new crypto project that leverages AI technology, powerful viral marketing and great ROI utility token. BURRO doesn’t mess around and has a mission to hit a $1B market cap, launching new products like the BURRO NFT WORLD, BURRO MERCHANDISE STORE AND BURRO TOKEN SWAP ON OUR PLATFORM.
 </p>
         </>
     )
@@ -176,8 +196,7 @@ Anyone who purchased BURRO tokens on the official site can claim their tokens at
     return(
         <>
 <p className=' text-xs sm:text-[10px] pt-2'>
-YES, WE ARE AVAILIBLE ON TELEGRAM, TWITTER, DISCORD AND VIA EMAIL AS WELL. 24 HOURS SUPPORT WILL BE PROVIDED.
-</p>
+Yes, we are availible on Telegram, Twitter, Discord and via Email as well. 24 hours support will be provided.</p>
         </>
     )
  };
@@ -185,7 +204,7 @@ YES, WE ARE AVAILIBLE ON TELEGRAM, TWITTER, DISCORD AND VIA EMAIL AS WELL. 24 HO
     return(
         <>
 <p className=' text-xs sm:text-[10px] pt-2'>
-Yes there will be! We will announce the full details of the staking pool and rewards at the end of the presale.
+Yes, You can stake your BURRO token from Day 1.
 </p>
         </>
     )
