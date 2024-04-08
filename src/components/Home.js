@@ -363,7 +363,7 @@ function buy_token()
               {/* <p>Your Stakeable $GBTC = 0</p> */}
             {/* </div> */}
 
-            <p className='mt-5 mb-2 text-[16px]' style={{ color:"#7DF9FF" }}>Stage # {props.curr_stage}</p>
+            <p className='mt-5 mb-2 text-[16px]' style={{ color:"#7DF9FF" }}>Stage # {Number(props.curr_stage)+1}</p>
 
             <p className='text-center mt-5 mb-2 text-[16px]'>{props.curr_presale.total_sold ? Number(props.curr_presale.total_sold)/10**18:0} / {props.curr_presale.supply?Number(props.curr_presale.supply)/10**18:0}</p>
             <div class="w-full backdrop-filter backdrop-blur-md bg-opacity-[13%] bg-white rounded-md h-4">
