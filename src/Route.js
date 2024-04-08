@@ -112,7 +112,9 @@ useEffect(()=>{
     let curr_presale = await presale_contract.methods.presale(curr_stage).call(); 
     let NextStage;
     if(curr_stage<9)
-    {       NextStage = await presale_contract.methods.presale(Number(curr_stage)+1).call();    
+    {       
+      NextStage = await presale_contract.methods.presale(Number(curr_stage)+1).call();    
+      set_NextStagePrice(NextStage)
 
     }   
 
@@ -125,7 +127,6 @@ useEffect(()=>{
     let totalbusiness = await staking_contract.methods.getTotalInvestment().call();
     
     
-    set_NextStagePrice(NextStage.price)
     set_MATICBalance(balance)
     set_curr_stage(curr_stage)
     set_curr_StageTime(curr_StageTime)

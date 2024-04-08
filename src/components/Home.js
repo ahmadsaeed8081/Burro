@@ -381,7 +381,7 @@ function buy_token()
             {Number(props.curr_stage)  < 9? (
 
             <div className="text-right my-4 text-[14px]" >
-            <p >Next = {props.curr_presale.price?(Number(props.NextStagePrice)/10**18):""}</p>
+            <p >Next = {props.NextStagePrice?(Number(props.NextStagePrice)/10**18):""}</p>
           </div>
 
             ):
