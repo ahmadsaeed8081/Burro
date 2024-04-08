@@ -381,7 +381,7 @@ function buy_token()
             {Number(props.curr_stage)  < 9? (
 
             <div className="text-right my-4 text-[14px]" >
-            <p >Next = {props.NextStagePrice?(Number(props.NextStagePrice)/10**18):""}</p>
+            <p >Next = {props.curr_presale.price?(Number(props.NextStagePrice)/10**18):""}</p>
           </div>
 
             ):
@@ -440,7 +440,7 @@ function buy_token()
       </div>
       </section>
       {/* hero section ends here */}
-      {props.loader && <Loader />}
+      {/* {props.loader && <Loader />} */}
 
     </div>
     </AnimatedSection>

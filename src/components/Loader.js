@@ -2,7 +2,7 @@ import React from "react";
 import { ThreeCircles } from "react-loader-spinner";
 
 const Loader = () => {
-  alert("loader")
+  // alert("loader")
   const loader_cmp ={
     justifyContent: "center",
     alignItems: "center",

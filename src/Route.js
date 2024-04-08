@@ -46,7 +46,7 @@ function RouteConfig() {
   const [curr_StageTime, set_curr_StageTime] = useState(0);
   const [curr_presale, set_curr_presale] = useState(0);
   const [perTokenIn_Matic, set_perTokenIn_Matic] = useState(0);
-  const [NextStagePrice, set_NextStagePrice] = useState(0);
+  const [NextStagePrice, set_NextStagePrice] = useState();
 
   const { chain } = useNetwork()
   // const location = useLocation();
@@ -112,8 +112,7 @@ useEffect(()=>{
     let curr_presale = await presale_contract.methods.presale(curr_stage).call(); 
     let NextStage;
     if(curr_stage<9)
-    {
-       NextStage = await presale_contract.methods.presale(curr_stage).call();    
+    {       NextStage = await presale_contract.methods.presale(Number(curr_stage)+1).call();    
 
     }   
 
@@ -126,8 +125,7 @@ useEffect(()=>{
     let totalbusiness = await staking_contract.methods.getTotalInvestment().call();
     
     
-
-    set_NextStagePrice(NextStage)
+    set_NextStagePrice(NextStage.price)
     set_MATICBalance(balance)
     set_curr_stage(curr_stage)
     set_curr_StageTime(curr_StageTime)
@@ -172,7 +170,7 @@ useEffect(()=>{
     <div className='relative z-50'><Navbar/></div>
       
         <Routes>
-            <Route path="/" loader={loader} NextStagePrice={NextStagePrice} test={test} element={<Home MATICBalance={MATICBalance} BURROBalance={BURROBalance} USDTBalance={USDTBalance} curr_time={curr_time} curr_stage={curr_stage} curr_StageTime={curr_StageTime}  curr_presale={curr_presale} perTokenIn_Matic={perTokenIn_Matic}  />} />
+            <Route path="/"  element={<Home loader={loader} NextStagePrice={NextStagePrice} test={test} MATICBalance={MATICBalance} BURROBalance={BURROBalance} USDTBalance={USDTBalance} curr_time={curr_time} curr_stage={curr_stage} curr_StageTime={curr_StageTime}  curr_presale={curr_presale} perTokenIn_Matic={perTokenIn_Matic}  />} />
             <Route path="/staking" element={<Staking BURROBalance={BURROBalance} curr_time={curr_time} min_stake={min_stake}  allInvestments={allInvestments}  test={test} />} />
         </Routes>   
       <Footer/>
